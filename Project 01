@@ -1,0 +1,24 @@
+using System.ComponentModel.Design;
+
+int numeroSecreto = 42;
+do
+{
+    Console.Write("Digite um número de 1 a 100: ");
+    int chute = int.Parse(Console.ReadLine());
+    if (chute == numeroSecreto)
+    {
+        Console.WriteLine("Parabéns! Você acertou o número.");
+        break;
+    }
+    else if (chute < numeroSecreto)
+    {
+        Console.WriteLine("O número é maior.");
+    }
+    else
+    {
+        Console.WriteLine("O número é menor.");
+    }
+
+} while (true);
+
+Console.WriteLine("O jogo acabou!");
