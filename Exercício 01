@@ -1,0 +1,14 @@
+int media = 5;
+if (media >= 5)
+{
+    Console.WriteLine("Nota o suficiente para a aprovação");
+}
+
+
+List<string> linguagem = new List<string> { "C#", "Java", "JS" };
+Console.WriteLine($"Linguagem {linguagem[0]} será utilizada");
+
+
+Console.WriteLine("Digite a posição desejada");
+int posicao = int.Parse( Console.ReadLine() );
+Console.WriteLine("linguagem[posição]");
