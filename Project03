@@ -1,0 +1,17 @@
+Dictionary<string, int> estoque = new Dictionary<string, int>
+{
+    {"camisetas", 50},
+    {"calças", 120},
+    {"tenis", 40},
+    {"acessorio",70},
+    //Adicione mais produtos conforme necessario
+};
+string produto = "acessorio";
+if (estoque.ContainsKey(produto))
+{
+    Console.WriteLine($"Qunatidade de {produto}: {estoque[produto]}unidades");
+}
+else
+{
+    Console.WriteLine("Produto não encontrado");
+}
